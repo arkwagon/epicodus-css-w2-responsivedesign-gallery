@@ -2,7 +2,7 @@
 
 *:not(body):not(html) {
   box-sizing:border-box;
-  border:1px dashed #000;
+  /*border:1px dashed #000;*/
 }
 
 .columns {
@@ -35,4 +35,29 @@ img {
 
 .header {
   text-align: center;
+}
+
+
+/* MEDIA QUERIES --------------------- */
+
+@media screen and (min-width: 850px) {
+  img {
+    max-width: 48%;
+    float: left;
+  }
+  .gallery {
+    text-align: center;
+    overflow: auto;
+    margin: 0 auto;
+    padding-left: 4%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  img {
+    max-width: 30%;
+  }
+  .gallery {
+    padding-left: 8%;
+  }
 }
